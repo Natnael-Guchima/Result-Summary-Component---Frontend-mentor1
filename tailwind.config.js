@@ -1,16 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/components/SubmitButton/index.js",
-    "./src/components/SummaryRow/index.js",
-    "./src/App.js",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
         primary: {
-          main: "#332ceb",
-          light: "#6743ff",
+          main: "#241fa5",
+          light: "#5139f5",
         },
         secondary: "#303b59",
       },

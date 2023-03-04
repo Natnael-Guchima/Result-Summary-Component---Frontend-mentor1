@@ -1,17 +1,17 @@
 import React from "react";
 
-import SummaryRow from "./components/SummaryRow";
-import IconReaction from "./Assets/images/icon-reaction.svg";
+import SummaryTable from "./layouts/SummaryTable";
+import SummaryContent from "./layouts/SummaryContent";
 // summaryIcon, summaryName, result
 const App = () => {
   return (
     <>
-      <SummaryRow
-        summaryIcon={IconReaction}
-        summaryName="Reaction"
-        result={"80"}
-        bgColor={"bg-pink-100"}
-      />
+      <div className="flex items-center justify-center sm:h-screen sm:w-screen ">
+        <div className="flex flex-col sm:flex-row sm:rounded-3xl sm:shadow-lg">
+          <SummaryContent />
+          <SummaryTable />
+        </div>
+      </div>
     </>
   );
 };
